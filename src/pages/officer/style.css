@@ -1,0 +1,41 @@
+.scanned{
+    position: relative;
+    border: 1px solid green !important;
+}
+.not-scanned{
+    border: 1px solid red !important;
+    position: relative;
+}
+.not-scanned .scanner-status{
+    background-color: rgb(86, 19, 19) !important;
+    color: #fff;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 15px;
+    border-radius: 100px;
+}
+.scanned .scanner-status{
+    background-color: rgb(19, 86, 46) !important;
+    color: #fff;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 15px;
+    border-radius: 100px;
+}
+.scanned .red-btn{
+    display: none;
+}
+.tick-indicator{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

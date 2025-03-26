@@ -1,0 +1,7 @@
+.new-weapon .form-control{
+    margin-bottom: 10px;
+}
+.new-weapon .form-control:focus{
+    box-shadow: none !important;
+    border: 1px solid goldenrod !important;
+}

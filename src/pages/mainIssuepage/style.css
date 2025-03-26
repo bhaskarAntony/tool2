@@ -1,0 +1,35 @@
+.search-officers, .search-weapons{
+    min-height: 300px;
+    max-height: 300px;
+    overflow: auto;
+}
+.search-officers input, .search-weapons input{
+    z-index: 10;
+    position: sticky;
+    top: 0;
+}
+.list-group-item{
+    /* background-color: var(--dark-blue) !important; */
+    /* color: #fff !important; */
+    /* border: none !important; */
+    padding: 20px !important;
+}
+.list-group-item input[type='checkbox'], table tr td input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+}
+.selection{
+    background-color: rgba(255, 145, 0, 0.123) !important;
+    border: 1px solid orange;
+    margin-top: 20px;
+}
+.issue{
+    position: fixed;
+    bottom: 0px;
+    z-index: 1020;
+    background-color: #f1f1f1;
+    /* box-shadow: 0px -10px 5px #ccc; */
+    border-top: 1px solid #ccc;
+    width: 100%;
+    left: 0;
+}

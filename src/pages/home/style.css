@@ -1,0 +1,18 @@
+.icon{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.icon:hover{
+    background-color: #e1dede;
+    border: 1px solid #ccc;
+}
+.modal-content{
+    border-radius: 0px !important;
+}
+.offcanvas.offcanvas-bottom{
+    min-height: 100vh !important;
+}
