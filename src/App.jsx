@@ -25,6 +25,7 @@ import FingerprintAuth from './pages/mainIssuepage/Scanner'
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import WeaponDetails from './pages/manage/Details'
+import ScanandReturn from './pages/ReturnWeapon/ScanandReturn'
 
 function App() {
   const {isAuthenticated} = useContext(AuthContext);
@@ -57,6 +58,7 @@ function App() {
             <Route path='/scanner' element={<ScanAndIssue/>}/>
             <Route path='/finger' element={<FingerprintAuth/>}/>
             <Route path='/details' element={<WeaponDetails/>}/>
+            <Route path='/return/weapons' element={<ScanandReturn/>}/>
           </Routes>
         </BrowserRouter>
     </section>

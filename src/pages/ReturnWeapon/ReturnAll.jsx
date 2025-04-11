@@ -283,7 +283,7 @@ function ReturnAll() {
                                             <i className="bi bi-gear-fill" style={{ cursor: 'pointer' }}></i>
                                           </Dropdown.Toggle>
                                           <Dropdown.Menu>
-                                            <Dropdown.Item href={`/return/weapon/${item._id}`} >  <a className='red-btn'>Receive</a></Dropdown.Item>
+                                            <Dropdown.Item href={`/return/weapons`} >  <a className='red-btn'>Receive</a></Dropdown.Item>
                                             <Dropdown.Item onClick={()=>saver(item._id)}> <button className="red-btn w-100">Print PDF</button></Dropdown.Item>
                                            
                                           </Dropdown.Menu>
