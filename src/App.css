@@ -84,3 +84,6 @@ tr:hover td{
   border-radius: 5px;
   background-color: #f8f9fa;
 }
+.btn{
+  border: none !important;
+}

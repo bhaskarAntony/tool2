@@ -43,17 +43,18 @@ function VerifyFinger(ProbFMR, GalleryFMR) {
     var jsondata = JSON.stringify(MFS100Request);
     return PostMFS100Client("verify", jsondata);
 }
-function MatchFinger(quality, timeout, capturedFingerprint, storedFingerprint) {
+function MatchFinger(quality, timeout, capturedFingerprint, storedFingerprint, bioType = "ASI") {
     var MFS100Request = {
         "Quality": quality,
         "TimeOut": timeout,
-        "ProbTemplate": capturedFingerprint,  // Add captured fingerprint
-        "GalleryTemplate": storedFingerprint,  // Stored fingerprint from JSON
-        "BioType": "ASI"  // Ensure you're using ASI format
+        "ProbTemplate": capturedFingerprint,
+        "GalleryTemplate": storedFingerprint,
+        "BioType": bioType  // Pass either "ASI" or "ANSI"
     };
     var jsondata = JSON.stringify(MFS100Request);
     return PostMFS100Client("match", jsondata);
 }
+
 
 function GetPidData(BiometricArray) {
     var req = new MFS100Request(BiometricArray);
